@@ -1,0 +1,11 @@
+version :  "3.9"
+
+services:
+  node_app:
+    image: node:16.19.0-alpine
+    working_dir: /node_test_app
+    volumes:
+      - ./:/node_test_app
+    command: npm run dev
+    ports:
+      - 8000:8000

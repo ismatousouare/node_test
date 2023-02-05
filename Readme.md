@@ -1,37 +1,40 @@
-# python_projet
+# node_test
 Ceci est un test
 
 ## Installation 
 ### Clonage du repertoire
 ```
-git clone  https://github.com/ismatousouare/python_projet.git
+git clone  git@github.com:ismatousouare/node_test.git
 ```
 ### Se deplacer dans le dossier du projet
 ```
-cd python_projet
+cd node_test
 ```
-### Installation des paquets 
-Pour installer les paquets il est recommandé de le faire dans un environnement virtuel ici venv  
-Pouvez l'intaller de la manière suivante 
-```
-python3 -m venv venv 
-```
-Pour l'activer on fait:
+### Lancement du projet avec Docker
+Pour lancer le projet il est recommandé d'utiliser docker, vous n'aurez donc rizn à installer sur votre machine
+Si vous n'avez pas docker d'installer <a  href="https://docs.docker.com/engine/install/"> voici le lien</a>
+
+
+Pour lancer le projet
 
 ```
-source venv/bin/activate
+docker compose up -d
 
 ```
-Pour installer les paquets 
+Pour verifier que le projet tourne allez au  <a href=" http://localhost:8000"> http://localhost:8000</a>
+
+### Lancement du projet avec npm
+#### Installations des paquets
 ```
-pip install -r  requirements.txt
-``` 
-### Lancement du projet
+ npm install 
 ```
-flask --app hello run  
+#### Lancement du projet
 ```
+npm run dev
+```
+
 Pour voir le site 
 ```
-http://127.0.O.1:5000
+http://127.0.O.1:8000
 ```
 
