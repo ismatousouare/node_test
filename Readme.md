@@ -1,14 +1,14 @@
 # node_test
-Ceci est un test
+Ce projet un backend et frontend
 
-## Installation 
+## Lancement backend
 ### Clonage du repertoire
 ```
 git clone  git@github.com:ismatousouare/node_test.git
 ```
 ### Se deplacer dans le dossier du projet
 ```
-cd node_test
+cd node_test/backend
 ```
 ### Lancement du projet avec Docker
 Pour lancer le projet il est recommandé d'utiliser docker, vous n'aurez donc rizn à installer sur votre machine

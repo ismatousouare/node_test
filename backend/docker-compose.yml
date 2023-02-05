@@ -2,10 +2,11 @@ version :  "3.9"
 
 services:
   node_app:
-    image: node:16.19.0-alpine
+    image: node:16.19.0
     working_dir: /node_test_app
     volumes:
       - ./:/node_test_app
-    command: npm run dev
+    command: >
+      bash -c "npm install && npm run dev "
     ports:
       - 8000:8000
